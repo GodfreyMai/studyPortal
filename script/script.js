@@ -1,16 +1,20 @@
 var today = new Date();
 var hourNow = today.getHours();
 var greeting;
-var reminder = "KEEP CODING"
+var reminder;
 
 if (hourNow > 18) {
     greeting = 'Good evening Godfrey!';
+    reminder = 'It\'s time for some Javascript'
 } else if (hourNow > 12) {
     greeting = 'Good afternoon Godfrey!';
+    reminder = 'It\'s time for a break'
 } else if (hourNow > 0) {
     greeting = 'Good morning Godfrey!';
+    reminder = 'It\'s time for some Simplilearn studies'
 } else {
     greeting = 'Welcome!';
+    reminder = 'You\'re making progress'
 }
 
 document.write('<h3>' + greeting  + '</h3>' + '<h2>' + reminder + '</h2>');
